@@ -24,7 +24,7 @@
         name = Dirt Floor
 		prerequisite = <Prison.Research.Prison>
         tooltipProvider = <Prison.Props.dirt>
-        tierOffset = 3
+        tierOffset = 1
     }
     
     minValue = 1
