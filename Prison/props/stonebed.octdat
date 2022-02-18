@@ -1,0 +1,46 @@
+{
+
+	id Prison.Props.stonebed
+	type BedPropType
+	inherit Oct.Props.Bed
+    
+	name = Stone Bed
+    toolName = Stone
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 15
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Furn>
+    maxHealth = 150
+    progressMultiplier = .0625
+    difficulty = .875
+    skillCurve = .5
+    
+    sleepQuality = .3
+
+    researchEntry = 
+    {
+        id Prison.Research.stonebed
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Stone Bed
+        tooltipProvider = <Prison.Props.stonebed>
+        tierOffset = 3
+		prerequisite = <Prison.Research.Prison>
+    }
+    
+    minValue = 3
+    maxValue = 10
+
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/stonebed.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}

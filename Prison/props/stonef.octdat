@@ -1,0 +1,61 @@
+{
+	id Prison.Props.stonef
+	type FloorPropType
+	inherit Oct.Props.Floor
+    
+	name = Stone Patern
+    toolName = Patern
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 5
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 100
+    progressMultiplier = .75
+    difficulty = .5
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Prison.Research.stonef
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Stone Patern
+		prerequisite = <Prison.Research.Prison>
+        tooltipProvider = <Prison.Props.stonef>
+        tierOffset = 3
+    }
+    
+    minValue = 1
+    maxValue = 10
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/stonef1.fbx
+			name = v1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/stonef2.fbx
+			name = v2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/stonef3.fbx
+			name = v3
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/stonef4.fbx
+			name = v4
+            behavior = PropBehavior
+		}
+	]
+	
+}

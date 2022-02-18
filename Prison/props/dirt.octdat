@@ -1,0 +1,61 @@
+{
+	id Prison.Props.dirt
+	type FloorPropType
+	inherit Oct.Props.Floor
+    
+	name = Dirt Floor
+    toolName = Dirt
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 1
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 70
+    progressMultiplier = .85
+    difficulty = .5
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Prison.Research.dirt
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Dirt Floor
+		prerequisite = <Prison.Research.Prison>
+        tooltipProvider = <Prison.Props.dirt>
+        tierOffset = 3
+    }
+    
+    minValue = 1
+    maxValue = 2
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/dirt1.fbx
+			name = v1
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/dirt2.fbx
+			name = v2
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/dirt3.fbx
+			name = v3
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/dirt4.fbx
+			name = v4
+            behavior = PropBehavior
+		}
+	]
+	
+}

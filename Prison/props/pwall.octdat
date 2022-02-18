@@ -1,0 +1,102 @@
+{
+
+	id Prison.Props.pwall
+	type WallPropType
+	inherit Oct.Props.Wall.Tall
+    
+	name = Prison Wall
+    toolName = Prison
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 12
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 300
+    progressMultiplier = .25
+    difficulty = .75
+    skillCurve = .75
+    
+    researchEntry = 
+    {
+        id Prison.Props.pwall.Research
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Prison Wall
+        tooltipProvider = <Prison.Props.pwall>
+        tierOffset = 8
+		prerequisite = <Prison.Research.Prison>
+    }
+    
+    minValue = 4
+    maxValue = 8
+	
+	cornerPostAccent =
+	{
+		id Prison.Props.pwall.Post
+		type PropAccentType
+		
+		prefab = 
+		{
+			type Prefab
+			path = /Art/ppost.fbx
+			name = Post
+            behavior = WallPostPropAccentBehavior
+			
+		}
+	}
+	
+    resolvablePrefabs = 
+	[
+	
+	//Walls
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant A
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/pwall1.fbx
+				name = v1
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant B
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/pwall2.fbx
+				name = v2
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant C
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/pwall3.fbx
+				name = v3
+                behavior = WallPropBehavior
+				
+			}
+		}
+		
+	]
+	
+	
+}

@@ -1,0 +1,18 @@
+{
+    id Prison.Research
+    type ResearchEntry
+    abstract
+    
+    verb = to Craft
+    skill = Crafting
+}
+{
+	id Prison.Research.Prison
+	type ResearchEntry
+    inherit Prison.Research
+	
+	name = Prison
+	description = Ability to Craft Prison Decorations
+	category = true
+	tierOffset = 0
+}

@@ -1,0 +1,22 @@
+{
+	id Prison.Categories.Prison
+	type PropCategory
+
+	name = Prison
+}
+{
+	id Prison.Categories.Prison.Props
+	type PropCategory
+
+	name = Building
+	toolName = Building
+	parent = <Prison.Categories.Prison>
+}
+{
+	id Prison.Categories.Prison.Furn
+	type PropCategory
+
+	name = Furnitures
+	toolName = Furnitures
+	parent = <Prison.Categories.Prison>
+}

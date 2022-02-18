@@ -1,0 +1,65 @@
+{
+
+	id Prison.Props.pdoor
+	type DoorPropType
+	inherit Oct.Props.Door
+    
+	name = Prison Door
+    toolName = Prison
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 9
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 300
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+	cornerPostAccent = <Oct.Props.Wall.Stone.Post>
+		
+    researchEntry = 
+    {
+        id Prison.Research.pdoor
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Prison Door
+        tooltipProvider = <Prison.Props.pdoor>
+        tierOffset = 8
+		prerequisite = <Prison.Research.Prison>
+    }
+    
+    minValue = 1
+    maxValue = 10
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/doorRig.fbx
+			name = Prison Door
+            behavior = DoorPropBehavior
+            physicsPath = /Art/doorPhysics.fbx   
+		
+            children = 
+            [
+                {
+                    type ChildPrefab
+                    path = /Art/Pdoorf.fbx
+                    physics = false
+                    name = Prison Frame
+                }
+                {
+                    type ChildPrefab
+                    path = /Art/Pdoor.fbx
+                    physics = false
+                    name = Prison Door
+                    parent = DoorBone
+                }
+            ]
+			
+		}
+	]
+	
+}
