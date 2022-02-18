@@ -15,9 +15,15 @@ Art by Papu Buntu, code by Satoru.
 ## Content
 
 -Prison wall
+
 -Prison door
+
 -prison pillar
+
 -new stone floor
+
 -dirt floor
+
 -stone bed
+
 -wall wood bed
