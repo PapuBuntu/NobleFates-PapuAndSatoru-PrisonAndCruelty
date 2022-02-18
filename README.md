@@ -5,9 +5,7 @@ Example: .../Noble Fates/Mods/Prison/
 
 This mod is compatible with old saves. Remove old Prison mod folder and replace with new when updating.
 
-Art by Papu Buntu, code by Satoru.
-
-### Download: <a href="https://github.com/PapuBuntu/NobleFates-PapuAndSatory-PrisonAndCruelty/raw/main/Prison.7z">Prison and Cruelty</a>  
+Art by Papu Buntu, code by Satoru. 
 
 <br>
 <br>
