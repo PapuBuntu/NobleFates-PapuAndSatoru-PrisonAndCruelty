@@ -1,0 +1,44 @@
+{
+
+	id Prison.Props.ppost
+	type WallPostPropType
+	inherit Oct.Props.WallPost
+    
+	name = Prison Post
+    toolName = Prison
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 6
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 150
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Prison.Research.ppost
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Prison Post
+        tooltipProvider = <Prison.Props.ppost>
+        tierOffset = 8
+		prerequisite = <Prison.Research.Prison>
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/ppost.fbx
+			name = NRM
+            behavior = PropBehavior
+		}
+	]
+	
+}
