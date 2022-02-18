@@ -7,7 +7,7 @@ This mod is compatible with old saves. Remove old Prison mod folder and replace 
 
 Art by Papu Buntu, code by Satoru.
 
-### Download: <a href="https://github.com/PapuBuntu/NobleFates-Papu-GardenAndBalcony/raw/main/Prison.7z">Prison and Cruelty</a>  
+### Download: <a href="https://github.com/PapuBuntu/NobleFates-PapuAndSatory-PrisonAndCruelty/raw/main/Prison.7z">Prison and Cruelty</a>  
 
 <br>
 <br>
