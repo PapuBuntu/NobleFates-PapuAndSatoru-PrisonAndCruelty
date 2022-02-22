@@ -1,0 +1,117 @@
+{
+
+	id Prison.Props.hwall
+	type WallPropType
+	inherit Oct.Props.Wall.Tall
+    
+	name = Huge Stonne Wall
+    toolName = Huge
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 30
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 300
+    progressMultiplier = .25
+    difficulty = .75
+    skillCurve = .75
+    
+    researchEntry = 
+    {
+        id Prison.Props.hwall.Research
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Huge Stone Wall
+        tooltipProvider = <Prison.Props.hwall>
+        tierOffset = 8
+		prerequisite = <Prison.Research.Prison>
+    }
+    
+    minValue = 4
+    maxValue = 8
+	
+	cornerPostAccent =
+	{
+		id Prison.Props.hwall.Post
+		type PropAccentType
+		
+		prefab = 
+		{
+			type Prefab
+			path = /Art/hugepillar4.fbx
+			name = Post
+            behavior = WallPostPropAccentBehavior
+			
+		}
+	}
+	
+    resolvablePrefabs = 
+	[
+	
+	//Walls
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant A
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/hugewall1.fbx
+				name = v1
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant B
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/hugewall2.fbx
+				name = v2
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant C
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/hugewall3.fbx
+				name = v3
+                behavior = WallPropBehavior
+				
+			}
+		}
+		{
+			type ResolvablePropPrefab
+			inherit Oct.Props.Wall.WallPrefab
+			
+			name = Variant D
+			
+			prefab =
+			{
+				type Prefab
+				path = /Art/hugewall4.fbx
+				name = v4
+                behavior = WallPropBehavior
+				
+			}
+		}
+		
+	]
+	
+	
+}

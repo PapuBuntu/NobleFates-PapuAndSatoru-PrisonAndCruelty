@@ -51,6 +51,12 @@
 			name = Botom
             behavior = PropBehavior
 		}
+		{
+			type Prefab
+			path = /Art/hugepillar4.fbx
+			name = Both
+            behavior = PropBehavior
+		}
 	]
 	
 }
