@@ -22,6 +22,8 @@ Art by Papu Buntu, code by Satoru.
 
 -huge stone pillar
 
+-huge stone wall
+
 -new stone floor
 
 -dirt floor
