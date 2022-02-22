@@ -20,6 +20,8 @@ Art by Papu Buntu, code by Satoru.
 
 -prison pillar
 
+-huge stone pillar
+
 -new stone floor
 
 -dirt floor
