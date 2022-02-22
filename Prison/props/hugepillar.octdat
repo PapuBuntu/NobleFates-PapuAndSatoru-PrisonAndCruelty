@@ -1,0 +1,56 @@
+{
+
+	id Prison.Props.hugepillar
+	type WallPostPropType
+	inherit Oct.Props.WallPost
+    
+	name = Huge Stone Pillar
+    toolName = Huge
+    
+	buildItemFilter = <Oct.Items.Stackable.Stone>
+	buildItemCount = 18
+	repairItemFilter = <Oct.Items.Stackable.Stone>
+    category = <Prison.Categories.Prison.Props>
+    maxHealth = 300
+    progressMultiplier = .35
+    difficulty = .75
+    skillCurve = .5
+    
+    researchEntry = 
+    {
+        id Prison.Research.hugepillar
+        type ResearchEntry
+        inherit Prison.Research
+        
+        name = Huge Stone Pillar
+        tooltipProvider = <Prison.Props.hugepillar>
+        tierOffset = 8
+		prerequisite = <Prison.Research.Prison>
+    }
+    
+    minValue = 1
+    maxValue = 5
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/hugepillar2.fbx
+			name = Top
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/hugepillar3.fbx
+			name = Midl
+            behavior = PropBehavior
+		}
+		{
+			type Prefab
+			path = /Art/hugepillar1.fbx
+			name = Botom
+            behavior = PropBehavior
+		}
+	]
+	
+}
