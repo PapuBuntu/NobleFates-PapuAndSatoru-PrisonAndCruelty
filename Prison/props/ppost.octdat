@@ -24,7 +24,7 @@
         
         name = Prison Post
         tooltipProvider = <Prison.Props.ppost>
-        tierOffset = 5
+        tierOffset = 8
 		prerequisite = <Prison.Research.Prison>
     }
     

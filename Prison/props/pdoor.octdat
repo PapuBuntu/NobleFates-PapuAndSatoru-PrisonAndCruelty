@@ -26,7 +26,7 @@
         
         name = Prison Door
         tooltipProvider = <Prison.Props.pdoor>
-        tierOffset = 5
+        tierOffset = 8
 		prerequisite = <Prison.Research.Prison>
     }
     

@@ -24,7 +24,7 @@
         
         name = Prison Wall
         tooltipProvider = <Prison.Props.pwall>
-        tierOffset = 5
+        tierOffset = 8
 		prerequisite = <Prison.Research.Prison>
     }
     
