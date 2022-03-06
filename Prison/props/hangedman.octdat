@@ -1,0 +1,65 @@
+{
+	id Prison.Props.HangedMan
+	type TilePropType
+    inherit Oct.Props.Audio.Wooden
+	
+	actorType = TilePropActor
+	name = Hanged Man
+    pluralName = Hanged Men
+    toolName = HangMan
+    toolSort = -50
+	
+	category = <Prison.Categories.Prison.Props>
+	selectionMode = Tile
+	buildingMode = Props
+	rotation = choose
+    
+	buildItemFilter = <Oct.Items.Corpse.Humanoid.Human>
+	buildItemCount = 1
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    
+    maxHealth = 100
+    progressMultiplier = .4
+    difficulty = 1
+    skillCurve = .4
+	
+	belonging = true
+    
+    researchEntry = <Prison.Research.HangedMan>
+    
+    minValue = 6
+    maxValue = 12
+	
+	buildPos = 
+	[
+		vector(0, 0, .51)
+		vector(0, 0, -.51)
+		vector(.51, 0, 0)
+		vector(-.51, 0, 0)
+	]
+	
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/hangedman.fbx
+			name = HangedMan
+            behavior = PropBehavior
+		}
+	]
+
+    researchEntry = 
+    {
+        id Prison.Research.HangedMan
+        type ResearchEntry
+        inherit Prison.Research
+
+        name = HangedMan
+        description = Construct a hanged man
+        category = false
+        tierOffset = 3
+        tooltipProvider = <Prison.Props.HangedMan>
+        prerequisite = <Prison.Research.Prison>
+        free = false
+    }
+}

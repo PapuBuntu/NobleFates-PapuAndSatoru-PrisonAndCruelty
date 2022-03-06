@@ -1,0 +1,71 @@
+{
+	id Prison.Props.HangedRope
+	type TilePropType
+	inherit Oct.Props.Audio.Wooden
+	
+	name = Hanged Rope
+    pluralName = Hanged Ropes
+    toolName = Hanged Rope
+    
+	buildItemFilter = <Oct.Items.Stackable.Wood>
+	buildItemCount = 6
+	repairItemFilter = <Oct.Items.Stackable.Wood>
+    
+    category = <Prison.Categories.Prison.Props>
+
+    maxHealth = 100
+    progressMultiplier = .4
+    difficulty = 1
+    skillCurve = .4
+    
+    minValue = 3
+    maxValue = 28
+
+    actorType = TilePropActor
+
+	selectionMode = Tile
+	buildingMode = Props
+	rotation = choose
+	
+	belonging = false
+    
+    itemsAllowedNegXPosZ = true
+    itemsAllowedPosXPosZ = true
+    detailPropsAllowedNegXPosZ = true
+    detailPropsAllowedPosXPosZ = true
+    
+    researchEntry = <Prison.Research.HangedRope>
+	
+    buildPos = 
+	[
+		vector(0, 0, .51)
+		vector(0, 0, -.51)
+		vector(.51, 0, 0)
+		vector(-.51, 0, 0)
+	]
+
+	prefabs = 
+	[
+		{
+			type Prefab
+			path = /Art/hangedrope.fbx
+			name = HangedRope
+            behavior = PropBehavior
+		}
+	]
+
+    researchEntry = 
+    {
+        id Prison.Research.HangedRope
+        type ResearchEntry
+        inherit Prison.Research
+
+        name = HangedRope
+        description = Construct a empty hanged rope
+        category = false
+        tierOffset = 3
+        tooltipProvider = <Prison.Props.HangedRope>
+        prerequisite = <Prison.Research.Prison>
+        free = false
+    }
+}
