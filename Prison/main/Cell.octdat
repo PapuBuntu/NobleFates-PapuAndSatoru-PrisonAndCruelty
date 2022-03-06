@@ -1,0 +1,15 @@
+{
+	id Oct.Rooms.Contents.Bed.Included
+	type ContainsPropSpecification
+	
+	name = Included Bed
+	types = 
+	[
+		<Oct.Props.Wood.Bed.Fancy>
+		<Oct.Props.Wood.Bed>
+        <Oct.Props.Straw.Bed>
+        <Prison.Props.wallbed>
+        <Prison.Props.stonebed>
+	]
+	included = true
+}
