@@ -4,7 +4,7 @@
 	type WallPropType
 	inherit Oct.Props.Wall.Tall
     
-	name = Huge Stonne Wall
+	name = Huge Stone Wall
     toolName = Huge
     
 	buildItemFilter = <Oct.Items.Stackable.Stone>
