@@ -12,10 +12,9 @@
 	repairItemFilter = <Oct.Items.Stackable.Stone>
     category = <Prison.Categories.Prison.Props>
     maxHealth = 300
-    progressMultiplier = .35
-    difficulty = .75
-    skillCurve = .5
-    
+    progressMultiplier = .7
+    difficulty = .3
+    skillCurve = .1
     researchEntry = 
     {
         id Prison.Research.hugepillar
@@ -24,12 +23,12 @@
         
         name = Huge Stone Pillar
         tooltipProvider = <Prison.Props.hugepillar>
-        tierOffset = 8
+        tierOffset = 7
 		prerequisite = <Prison.Research.Prison>
     }
     
-    minValue = 1
-    maxValue = 5
+    minValue = 5
+    maxValue = 10
 	
 	prefabs = 
 	[

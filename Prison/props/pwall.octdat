@@ -12,9 +12,9 @@
 	repairItemFilter = <Oct.Items.Stackable.Stone>
     category = <Prison.Categories.Prison.Props>
     maxHealth = 300
-    progressMultiplier = .25
-    difficulty = .75
-    skillCurve = .75
+    progressMultiplier = .7
+    difficulty = .2
+    skillCurve = .1
     
     researchEntry = 
     {
@@ -24,12 +24,12 @@
         
         name = Prison Wall
         tooltipProvider = <Prison.Props.pwall>
-        tierOffset = 8
+        tierOffset = 7
 		prerequisite = <Prison.Research.Prison>
     }
     
-    minValue = 4
-    maxValue = 8
+    minValue = 5
+    maxValue = 10
 	
 	cornerPostAccent =
 	{

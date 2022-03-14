@@ -16,8 +16,8 @@
 	toolSort = -1000
     
     maxHealth = 100
-    progressMultiplier = .5
-    difficulty = .5
+    progressMultiplier = .7
+    difficulty = .2
     burnRate = 0
     demolition = false
     decays = false
@@ -77,4 +77,19 @@
             }
         }
     ]
+
+    researchEntry = 
+    {
+        id Prison.Research.HangMansRope
+        type ResearchEntry
+        inherit Prison.Research
+
+        name = HangMans Rope
+        description = Construct a hanged man
+        category = false
+        tierOffset = 2
+        tooltipProvider = <Prison.Props.HangMansRope>
+        prerequisite = <Prison.Research.Prison>
+        free = false
+    }
 }
