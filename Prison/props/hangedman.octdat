@@ -19,16 +19,14 @@
 	repairItemFilter = <Oct.Items.Stackable.Wood>
     
     maxHealth = 100
-    progressMultiplier = .4
-    difficulty = 1
-    skillCurve = .4
+    progressMultiplier = .7
+    difficulty = .2
+    skillCurve = .1
 	
 	belonging = true
     
-    researchEntry = <Prison.Research.HangedMan>
-    
-    minValue = 6
-    maxValue = 12
+    minValue = 5
+    maxValue = 10
 	
 	buildPos = 
 	[
@@ -57,7 +55,7 @@
         name = HangedMan
         description = Construct a hanged man
         category = false
-        tierOffset = 3
+        tierOffset = 2
         tooltipProvider = <Prison.Props.HangedMan>
         prerequisite = <Prison.Research.Prison>
         free = false
